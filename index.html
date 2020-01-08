@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+<section>
+    <h1>Dog Breed Slide Show</h1>
+    <h2 id="caption" >Afghan-Hound</h2>
+    <img id="slide" src="images/dog8.jpg" alt="tessteeeeeee">
+    <div id="slides"> 
+        <img src="images/dog0.jpg" alt="aaaaa">
+        <img src="images/dog1.jpg" alt="bbbbb">
+        <img src="images/dog2.jpg" alt="ccccc">
+        <img src="images/dog3.jpg" alt="ddddd">
+        <img src="images/dog4.jpg" alt="German Shepard">
+        <img src="images/dog5.jpg" alt="Italian-Greyhound">
+        <img src="images/dog6.jpg" alt="Labrador Retriever">
+        <img src="images/dog7.jpg" alt="Samoyed">
+        <img src="images/dog8.jpg" alt="Siberian Husky">
+    </div>
+    
+    
+    <div id="buttons">
+        <input type="button" id="prev" value="Previous" onclick=showPrev()>
+        <input type="button" id="next" value="Next" onclick=showNext()>
+        <select id="nivel" onchange='changeLevel()'>
+            <option>Change the Frequency</option>
+            <option value=1>1 seconds</option>
+            <option value=2>2 seconds</option>
+            <option value=3>3 seconds</option>
+            <option value=4>4 seconds</option>
+            <option value=5>5 seconds</option>
+            <option value=6>6 seconds</option>
+            <option value=7>7 seconds</option>
+        </select>
+        <input type="button" id="play" value="play" onclick=showAuto()>
+  	    <input type="button" id="pause" value="Pause" onclick=showStop()> 	     	
+    </div>
+</section>
+</body>
+</html>
