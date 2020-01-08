@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+<section>
+    <h1>Welcome to TESLA!</h1>
+    <h2 id="caption" >THE FUTURE OF TRANSPORTATION</h2>
+    <img id="slide" src="images/car0.jpg" alt="tessteeeeeee">
+    <div id="slides"> 
+        <img src="images/car1.jpg" alt="aaaaa">
+        <img src="images/car2.jpg" alt="bbbbb">
+        <img src="images/car3.jpg" alt="ccccc">
+        <img src="images/car4.jpg" alt="ddddd">
+        <img src="images/car5.jpg" alt="German Shepard">
+        <img src="images/car6.jpg" alt="Italian-Greyhound">
+        <img src="images/car7.jpg" alt="Labrador Retriever">
+        <img src="images/car8.jpg" alt="Samoyed">
+        <img src="images/car9.jpg" alt="Siberian Husky">
+    </div>
+    
+    
+    <div id="buttons">
+        <input class="btn" type="button" id="prev" value="Previous" onclick=showPrev()>
+        <input class="btn" type="button" id="next" value="Next" onclick=showNext()>
+        <select class="btn" id="nivel" onchange='changeLevel()'>
+            <option>Change the Frequency</option>
+            <option value=1>1 seconds</option>
+            <option value=2>2 seconds</option>
+            <option value=3>3 seconds</option>
+            <option value=4>4 seconds</option>
+            <option value=5>5 seconds</option>
+            <option value=6>6 seconds</option>
+            <option value=7>7 seconds</option>
+        </select>
+        <input class="btn" type="button" id="play" value="Play" onclick=showAuto()>
+  	    <input class="btn" type="button" id="pause" value="Pause" onclick=showStop()> 	     	
+    </div>
+</section>
+</body>
+</html>

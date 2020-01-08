@@ -23,7 +23,13 @@ changeLevel();
  //document.getElementById("lvl").innerHTML=("Level: " +level);
 
 function showSlideNum() {
-    document.getElementById('caption').inner=curimage.alt;
+    // document.getElementById('caption').innerHTML= curimage;
+    var nameOfBreed = document.getElementById('caption');
+    if (curimage == 1) {
+        nameOfBreed.innerHTML= ("Labrador");
+    } else if (curimage == 2) {
+        nameOfBreed.innerHTML= ("Pitbull");
+    }
 }
 // function showSlideNum() {
 //     var x = document.getElementById("myImg").alt;
@@ -34,9 +40,9 @@ function showNext() {
     curimage++;
     if (curimage>9) {
         curimage--;
-        alert('This is last picture in the catalog');
+        alert('This is the last picture!!');
     }
-    document.images.slide.src='images/dog'+curimage+'.jpg';
+    document.images.slide.src='images/car'+curimage+'.jpg';
     showSlideNum();
 }
 
@@ -48,7 +54,7 @@ function showPrev() {
     alert('There is no more picture before this one!!!');
         }
 
-        document.images.slide.src='images/dog'+curimage+'.jpg';
+        document.images.slide.src='images/car'+curimage+'.jpg';
         showSlideNum();
 }
 
@@ -70,7 +76,7 @@ function showAuto(){
     curimage=0
     }
 
-    document.images.slide.src='images/dog'+curimage+'.jpg';
+    document.images.slide.src='images/car'+curimage+'.jpg';
     showSlideNum();
     setTimeout('showAuto()', frequency);
 }
