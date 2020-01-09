@@ -26,9 +26,23 @@ function showSlideNum() {
     // document.getElementById('caption').innerHTML= curimage;
     var nameOfBreed = document.getElementById('caption');
     if (curimage == 1) {
-        nameOfBreed.innerHTML= ("Labrador");
+        nameOfBreed.innerHTML= ("Model X | SUV");
     } else if (curimage == 2) {
-        nameOfBreed.innerHTML= ("Pitbull");
+        nameOfBreed.innerHTML= ("Cyber Truck");
+    } else if (curimage == 3) {
+        nameOfBreed.innerHTML= ("Model S");
+    } else if (curimage == 4) {
+        nameOfBreed.innerHTML= ("Model X");
+    } else if (curimage == 5) {
+        nameOfBreed.innerHTML= ("Model S | Cyber Sedan");
+    } else if (curimage == 6) {
+        nameOfBreed.innerHTML= ("Pickup Truck");
+    } else if (curimage == 7) {
+        nameOfBreed.innerHTML= ("Roadster");
+    } else if (curimage == 8) {
+        nameOfBreed.innerHTML= ("ATV");
+    } else if (curimage == 9) {
+        nameOfBreed.innerHTML= ("Truck Semi");
     }
 }
 // function showSlideNum() {
@@ -46,12 +60,11 @@ function showNext() {
     showSlideNum();
 }
 
-
 function showPrev() {
     curimage--;
     if (curimage<0){
-            curimage++;
-    alert('There is no more picture before this one!!!');
+        curimage++;
+    alert('There is no more picture before this one, click Next to see more Pictures!');
         }
 
         document.images.slide.src='images/car'+curimage+'.jpg';
