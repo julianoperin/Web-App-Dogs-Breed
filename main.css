@@ -17,17 +17,19 @@ body {
 h1, h2, ul, p {
 	margin: 0;
     padding: 0;
-    font-size: 50px;
 }
 
 h1 {
-	color: red;
+    font-size: 55px;
+    color: red;
+    font-family: 'Special Elite', Georgia, cursive;
 }
 
 h2 {
-	font-size: 120%;
+	font-size: 26px;
     padding: .5em 0;
     color: white;
+    font-family: 'Orbitron', sans-serif, Georgia;
 }
 
 img {
@@ -61,5 +63,16 @@ img {
 
 .btn:hover {
     color: red;
-    background: rgb(33, 33, 33);
+    background:#F4F4F4;
+}
+
+#main-footer {
+   font-family: 'Orbitron', sans-serif, Georgia;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+   padding-bottom: 15px;
 }
