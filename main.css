@@ -47,9 +47,7 @@ img {
     margin-top: 25px;
 	text-align: center;
 }
-#nivel {
-    padding: 30px;
-}
+
 
 .btn {
     padding: 10px 15px;
@@ -77,6 +75,12 @@ img {
    padding-bottom: 15px;
 }
 
-.teslasite {
+#link{
+    padding-left: 10px;
     color: red;
+    cursor: pointer;
+}
+#link:hover {
+    font-size: 18px;
+    font-weight: bold;
 }
